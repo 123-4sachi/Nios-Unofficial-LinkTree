@@ -1,0 +1,82 @@
+body{
+    background-color: rgb(1, 1, 1);
+}
+
+img{
+    border-radius: 50%;
+    height: 5.9rem;
+    width: auto;
+}
+
+
+div{
+    text-align: center;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* Center all buttons horizontally */
+  gap: 2px;
+}
+
+
+h2{
+    color: rgb(244, 242, 242);
+    
+}
+h5{
+    color: rgb(255, 255, 254);
+    
+}
+
+
+.button-with-icon {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  align-content: space-evenly;
+  max-width: 400px;       /* ✅ reduce width here */
+  width: 100%;            /* ✅ still responsive */
+  margin: 10px auto;    
+  gap: 10px; /* space between icon and text */
+  background: linear-gradient(to right, #7b2ff7, #f107a3); /* your gradient */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button-image {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.button-with-icon:hover {
+  box-shadow: 0 0 20px 10px rgba(163, 150, 150, 0.742);
+  transform: scale(1.03);
+}
+
+
+/* /// responsive desgine for phone too */
+
+@media (max-width: 480px) {
+  .button-with-icon {
+    max-width: 90%;            /* Reduce side margin */
+    font-size: 15px;           /* Slightly smaller text */
+    padding: 12px 16px;        /* Slightly tighter padding */
+    gap: 10px;                 /* Less space between icon and text */
+  }
+
+  .button-image {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+
+
+
