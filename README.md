@@ -1,9 +1,11 @@
-# Nios-Unofficial-LinkTree
+# NIOS Unofficial Linktree
 
-# link of the webpage ----  https://123-4sachi.github.io/Nios-Unofficial-LinkTree/
-this is how it looks 
-![image](https://github.com/user-attachments/assets/587c63b9-7ff1-4ac7-a61a-c936bcce2148)
+An open-source student community created by learners, for learners.  
+Not officially affiliated with NIOS.
 
-the page is responsive for phone too -- 
+## Preview
 
-![image](https://github.com/user-attachments/assets/08c36e1d-a1d5-4401-86f0-2f2612635c92)
+![Project Preview](./img/preview.png)
+
+## with responsive
+![Project Preview](./img/responsive.png)

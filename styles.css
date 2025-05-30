@@ -1,82 +1,134 @@
-body{
-    background-color: rgb(1, 1, 1);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-img{
-    border-radius: 50%;
-    height: 5.9rem;
-    width: auto;
+body {
+    background-color: #121212;
+    font-family: 'Inter', sans-serif;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
+.container {
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+}
 
-div{
+.todo-app {
+    background: #1e1e1e;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
     text-align: center;
 }
 
+.logo {
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #b0b0b0;
+    margin-bottom: 24px;
+}
+
+.emoji {
+    font-size: 1.2em;
+}
+
 .button-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;  /* Center all buttons horizontally */
-  gap: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
 }
-
-
-h2{
-    color: rgb(244, 242, 242);
-    
-}
-h5{
-    color: rgb(255, 255, 254);
-    
-}
-
 
 .button-with-icon {
-  display: flex;
-  text-align: center;
-  align-items: center;
-  align-content: space-evenly;
-  max-width: 400px;       /* ✅ reduce width here */
-  width: 100%;            /* ✅ still responsive */
-  margin: 10px auto;    
-  gap: 10px; /* space between icon and text */
-  background: linear-gradient(to right, #7b2ff7, #f107a3); /* your gradient */
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 10px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.button-image {
-  width: 24px;
-  height: 24px;
-  object-fit: contain;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    max-width: 360px;
+    padding: 14px 20px;
+    background: linear-gradient(135deg, #6e00ff, #ff007a);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .button-with-icon:hover {
-  box-shadow: 0 0 20px 10px rgba(163, 150, 150, 0.742);
-  transform: scale(1.03);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
 }
 
+.button-image {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
 
-/* /// responsive desgine for phone too */
+footer {
+    margin-top: 24px;
+    font-size: 14px;
+    color: #888888;
+}
 
+/* Responsive Design */
 @media (max-width: 480px) {
-  .button-with-icon {
-    max-width: 90%;            /* Reduce side margin */
-    font-size: 15px;           /* Slightly smaller text */
-    padding: 12px 16px;        /* Slightly tighter padding */
-    gap: 10px;                 /* Less space between icon and text */
-  }
+    .container {
+        padding: 16px;
+    }
 
-  .button-image {
-    width: 22px;
-    height: 22px;
-  }
+    .todo-app {
+        padding: 24px;
+    }
+
+    .logo {
+        height: 60px;
+        width: 60px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .button-with-icon {
+        max-width: 100%;
+        padding: 12px 16px;
+        font-size: 15px;
+    }
+
+    .button-image {
+        width: 24px;
+        height: 24px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
 }
-
-
-
-
